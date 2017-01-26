@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "22AB0660F3E297843F2D23C6EF34C8642D0CD2E9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "22AB0660F3E297843F2D23C6EF34C8642D0CD2E9" : 9223372036854775807,
+    "AA35E2445B51590134F9C7C924012E4B57A118E0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F35A4B1A-7134-4BA1-B07A-BC4205DB874D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "22AB0660F3E297843F2D23C6EF34C8642D0CD2E9" : "Ridap\/",
+    "AA35E2445B51590134F9C7C924012E4B57A118E0" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Ridap",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Ridap\/Ridap.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/manhlx3006\/Ridap.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22AB0660F3E297843F2D23C6EF34C8642D0CD2E9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/manhlx3006\/Ridap.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AA35E2445B51590134F9C7C924012E4B57A118E0"
+    }
+  ]
+}

@@ -14,6 +14,7 @@
 		C19B515A1E3A069200F55981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19B51581E3A069200F55981 /* LaunchScreen.storyboard */; };
 		C19B51651E3A069200F55981 /* RidapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B51641E3A069200F55981 /* RidapTests.swift */; };
 		C19B51701E3A069200F55981 /* RidapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B516F1E3A069200F55981 /* RidapUITests.swift */; };
+		C19B517F1E3A072C00F55981 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19B517E1E3A072C00F55981 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C19B516B1E3A069200F55981 /* RidapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19B516F1E3A069200F55981 /* RidapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidapUITests.swift; sourceTree = "<group>"; };
 		C19B51711E3A069200F55981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19B517E1E3A072C00F55981 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19B517F1E3A072C00F55981 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				C19B51631E3A069200F55981 /* RidapTests */,
 				C19B516E1E3A069200F55981 /* RidapUITests */,
 				C19B514D1E3A069200F55981 /* Products */,
+				C19B517D1E3A072C00F55981 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				C19B51711E3A069200F55981 /* Info.plist */,
 			);
 			path = RidapUITests;
+			sourceTree = "<group>";
+		};
+		C19B517D1E3A072C00F55981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C19B517E1E3A072C00F55981 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +207,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ZEC49S6T5X;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C19B515F1E3A069200F55981 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -417,6 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZEC49S6T5X;
 				INFOPLIST_FILE = Ridap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mike.le.Ridap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZEC49S6T5X;
 				INFOPLIST_FILE = Ridap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mike.le.Ridap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
