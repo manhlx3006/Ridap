@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C19B51501E3A069200F55981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B514F1E3A069200F55981 /* AppDelegate.swift */; };
+		C19B51521E3A069200F55981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B51511E3A069200F55981 /* ViewController.swift */; };
+		C19B51551E3A069200F55981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19B51531E3A069200F55981 /* Main.storyboard */; };
+		C19B51571E3A069200F55981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19B51561E3A069200F55981 /* Assets.xcassets */; };
+		C19B515A1E3A069200F55981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19B51581E3A069200F55981 /* LaunchScreen.storyboard */; };
+		C19B51651E3A069200F55981 /* RidapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B51641E3A069200F55981 /* RidapTests.swift */; };
+		C19B51701E3A069200F55981 /* RidapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19B516F1E3A069200F55981 /* RidapUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C19B51611E3A069200F55981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19B51441E3A069200F55981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19B514B1E3A069200F55981;
+			remoteInfo = Ridap;
+		};
+		C19B516C1E3A069200F55981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19B51441E3A069200F55981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19B514B1E3A069200F55981;
+			remoteInfo = Ridap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C19B514C1E3A069200F55981 /* Ridap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ridap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19B514F1E3A069200F55981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C19B51511E3A069200F55981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C19B51541E3A069200F55981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C19B51561E3A069200F55981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C19B51591E3A069200F55981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C19B515B1E3A069200F55981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19B51601E3A069200F55981 /* RidapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19B51641E3A069200F55981 /* RidapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidapTests.swift; sourceTree = "<group>"; };
+		C19B51661E3A069200F55981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19B516B1E3A069200F55981 /* RidapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19B516F1E3A069200F55981 /* RidapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidapUITests.swift; sourceTree = "<group>"; };
+		C19B51711E3A069200F55981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C19B51491E3A069200F55981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19B515D1E3A069200F55981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19B51681E3A069200F55981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C19B51431E3A069200F55981 = {
+			isa = PBXGroup;
+			children = (
+				C19B514E1E3A069200F55981 /* Ridap */,
+				C19B51631E3A069200F55981 /* RidapTests */,
+				C19B516E1E3A069200F55981 /* RidapUITests */,
+				C19B514D1E3A069200F55981 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C19B514D1E3A069200F55981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C19B514C1E3A069200F55981 /* Ridap.app */,
+				C19B51601E3A069200F55981 /* RidapTests.xctest */,
+				C19B516B1E3A069200F55981 /* RidapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C19B514E1E3A069200F55981 /* Ridap */ = {
+			isa = PBXGroup;
+			children = (
+				C19B514F1E3A069200F55981 /* AppDelegate.swift */,
+				C19B51511E3A069200F55981 /* ViewController.swift */,
+				C19B51531E3A069200F55981 /* Main.storyboard */,
+				C19B51561E3A069200F55981 /* Assets.xcassets */,
+				C19B51581E3A069200F55981 /* LaunchScreen.storyboard */,
+				C19B515B1E3A069200F55981 /* Info.plist */,
+			);
+			path = Ridap;
+			sourceTree = "<group>";
+		};
+		C19B51631E3A069200F55981 /* RidapTests */ = {
+			isa = PBXGroup;
+			children = (
+				C19B51641E3A069200F55981 /* RidapTests.swift */,
+				C19B51661E3A069200F55981 /* Info.plist */,
+			);
+			path = RidapTests;
+			sourceTree = "<group>";
+		};
+		C19B516E1E3A069200F55981 /* RidapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C19B516F1E3A069200F55981 /* RidapUITests.swift */,
+				C19B51711E3A069200F55981 /* Info.plist */,
+			);
+			path = RidapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C19B514B1E3A069200F55981 /* Ridap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19B51741E3A069200F55981 /* Build configuration list for PBXNativeTarget "Ridap" */;
+			buildPhases = (
+				C19B51481E3A069200F55981 /* Sources */,
+				C19B51491E3A069200F55981 /* Frameworks */,
+				C19B514A1E3A069200F55981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ridap;
+			productName = Ridap;
+			productReference = C19B514C1E3A069200F55981 /* Ridap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C19B515F1E3A069200F55981 /* RidapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19B51771E3A069200F55981 /* Build configuration list for PBXNativeTarget "RidapTests" */;
+			buildPhases = (
+				C19B515C1E3A069200F55981 /* Sources */,
+				C19B515D1E3A069200F55981 /* Frameworks */,
+				C19B515E1E3A069200F55981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19B51621E3A069200F55981 /* PBXTargetDependency */,
+			);
+			name = RidapTests;
+			productName = RidapTests;
+			productReference = C19B51601E3A069200F55981 /* RidapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C19B516A1E3A069200F55981 /* RidapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19B517A1E3A069200F55981 /* Build configuration list for PBXNativeTarget "RidapUITests" */;
+			buildPhases = (
+				C19B51671E3A069200F55981 /* Sources */,
+				C19B51681E3A069200F55981 /* Frameworks */,
+				C19B51691E3A069200F55981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19B516D1E3A069200F55981 /* PBXTargetDependency */,
+			);
+			name = RidapUITests;
+			productName = RidapUITests;
+			productReference = C19B516B1E3A069200F55981 /* RidapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C19B51441E3A069200F55981 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Xuan Manh Le";
+				TargetAttributes = {
+					C19B514B1E3A069200F55981 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZEC49S6T5X;
+						ProvisioningStyle = Automatic;
+					};
+					C19B515F1E3A069200F55981 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZEC49S6T5X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C19B514B1E3A069200F55981;
+					};
+					C19B516A1E3A069200F55981 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZEC49S6T5X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C19B514B1E3A069200F55981;
+					};
+				};
+			};
+			buildConfigurationList = C19B51471E3A069200F55981 /* Build configuration list for PBXProject "Ridap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C19B51431E3A069200F55981;
+			productRefGroup = C19B514D1E3A069200F55981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C19B514B1E3A069200F55981 /* Ridap */,
+				C19B515F1E3A069200F55981 /* RidapTests */,
+				C19B516A1E3A069200F55981 /* RidapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C19B514A1E3A069200F55981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19B515A1E3A069200F55981 /* LaunchScreen.storyboard in Resources */,
+				C19B51571E3A069200F55981 /* Assets.xcassets in Resources */,
+				C19B51551E3A069200F55981 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19B515E1E3A069200F55981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19B51691E3A069200F55981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C19B51481E3A069200F55981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19B51521E3A069200F55981 /* ViewController.swift in Sources */,
+				C19B51501E3A069200F55981 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19B515C1E3A069200F55981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19B51651E3A069200F55981 /* RidapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19B51671E3A069200F55981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19B51701E3A069200F55981 /* RidapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C19B51621E3A069200F55981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19B514B1E3A069200F55981 /* Ridap */;
+			targetProxy = C19B51611E3A069200F55981 /* PBXContainerItemProxy */;
+		};
+		C19B516D1E3A069200F55981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19B514B1E3A069200F55981 /* Ridap */;
+			targetProxy = C19B516C1E3A069200F55981 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C19B51531E3A069200F55981 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C19B51541E3A069200F55981 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C19B51581E3A069200F55981 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C19B51591E3A069200F55981 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C19B51721E3A069200F55981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C19B51731E3A069200F55981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C19B51751E3A069200F55981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZEC49S6T5X;
+				INFOPLIST_FILE = Ridap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mike.le.Ridap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C19B51761E3A069200F55981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZEC49S6T5X;
+				INFOPLIST_FILE = Ridap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mike.le.Ridap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C19B51781E3A069200F55981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZEC49S6T5X;
+				INFOPLIST_FILE = RidapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mike.le.RidapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ridap.app/Ridap";
+			};
+			name = Debug;
+		};
+		C19B51791E3A069200F55981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZEC49S6T5X;
+				INFOPLIST_FILE = RidapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mike.le.RidapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ridap.app/Ridap";
+			};
+			name = Release;
+		};
+		C19B517B1E3A069200F55981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZEC49S6T5X;
+				INFOPLIST_FILE = RidapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mike.le.RidapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Ridap;
+			};
+			name = Debug;
+		};
+		C19B517C1E3A069200F55981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZEC49S6T5X;
+				INFOPLIST_FILE = RidapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mike.le.RidapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Ridap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C19B51471E3A069200F55981 /* Build configuration list for PBXProject "Ridap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19B51721E3A069200F55981 /* Debug */,
+				C19B51731E3A069200F55981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19B51741E3A069200F55981 /* Build configuration list for PBXNativeTarget "Ridap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19B51751E3A069200F55981 /* Debug */,
+				C19B51761E3A069200F55981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C19B51771E3A069200F55981 /* Build configuration list for PBXNativeTarget "RidapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19B51781E3A069200F55981 /* Debug */,
+				C19B51791E3A069200F55981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C19B517A1E3A069200F55981 /* Build configuration list for PBXNativeTarget "RidapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19B517B1E3A069200F55981 /* Debug */,
+				C19B517C1E3A069200F55981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C19B51441E3A069200F55981 /* Project object */;
+}
