@@ -28,11 +28,16 @@ class ViewController: UIViewController {
   var sourceLoc : CLLocation?
   var destLoc : CLLocation?
   
+  var sourceAnnotation : RCustomPointAnnotation!
+  var destAnnotation : RCustomPointAnnotation!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     self.setUpUI()
     self.addGesturesToMapView()
+    self.mapView.delegate = self
+    self.mapView.mapType = .standard
     self.locationManager = CLLocationManager()
     self.locationManager.delegate = self
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -46,6 +51,9 @@ class ViewController: UIViewController {
   }
   
   @IBAction func routeBtnPressed(_ sender: UIButton) {
+    if self.sourceLoc == nil || self.destLoc == nil {
+      return
+    }
     let sourcePlaceMark = MKPlacemark(coordinate: self.sourceLoc!.coordinate)
     let sourceItem = MKMapItem(placemark: sourcePlaceMark)
     let destPlaceMark = MKPlacemark(coordinate: self.destLoc!.coordinate)
@@ -61,6 +69,11 @@ class ViewController: UIViewController {
         self.etaLabel.text = "\(Int(response.expectedTravelTime) / 60) mins away"
       }
     }
+    RLocationHelper.shared.drawRouteFrom(sourceLocation: self.sourceLoc!.coordinate,
+                                         destLocation: self.destLoc!.coordinate,
+                                         view: self.mapView,
+                                         sourceImg: UIImage(named: "source"),
+                                         destImg: UIImage(named: "destination"))
   }
   @IBAction func routeScorePressed(_ sender: UIButton) {
   }
@@ -89,8 +102,8 @@ extension ViewController {
     routeBtn.layer.borderColor = UIColor.white.cgColor
     routeBtn.clipsToBounds = true
     
-    self.etaLabel.text = "ETA of 2 locations here"
-    self.distanceLabel.text = "Distance of 2 locations here"
+    self.etaLabel.text = "ETA"
+    self.distanceLabel.text = "Distance"
   }
   
   func addGesturesToMapView() {
@@ -103,8 +116,16 @@ extension ViewController {
     let point = sender.location(in: self.mapView)
     let location = self.mapView.convert(point, toCoordinateFrom: self.mapView)
     self.destLoc = CLLocation(latitude: location.latitude, longitude: location.longitude)
+    if self.destAnnotation != nil {
+      self.mapView.removeAnnotation(self.destAnnotation)
+    }
+    self.destAnnotation = RCustomPointAnnotation()
+    self.destAnnotation.identifier = "destination"
+    self.destAnnotation.image = UIImage(named: "destination")
+    self.destAnnotation.title = "Destination"
+    self.destAnnotation.subtitle = RLocationHelper.shared.parseAddress(selectedItem: self.destLoc!.placeMark())
+    self.mapView.addAnnotation(self.destAnnotation)
   }
-  
 }
 
 extension ViewController : MKMapViewDelegate, CLLocationManagerDelegate {
@@ -115,12 +136,37 @@ extension ViewController : MKMapViewDelegate, CLLocationManagerDelegate {
     }
   }
   
+  func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    let renderer = MKPolylineRenderer(overlay: overlay)
+    renderer.lineWidth = 10.0
+    renderer.strokeColor = UIColor.green
+    
+    return renderer
+  }
+  
+  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    guard let customAnnotation = annotation as? RCustomPointAnnotation else {
+      return nil
+    }
+    return RLocationHelper.shared.annotationView(annotation: customAnnotation, mapView: mapView)
+  }
+  
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     if let location = locations.last {
-      let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-      let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-      self.mapView.setRegion(region, animated: true)
       self.sourceLoc = location
+      if self.sourceAnnotation != nil {
+        self.mapView.removeAnnotation(self.sourceAnnotation)
+      }
+      self.sourceAnnotation = RCustomPointAnnotation()
+      self.sourceAnnotation.identifier = "source"
+      self.sourceAnnotation.image = UIImage(named: "source")
+      self.sourceAnnotation.title = "Source"
+      self.sourceAnnotation.subtitle = RLocationHelper.shared.parseAddress(selectedItem: self.sourceLoc!.placeMark())
+      self.mapView.addAnnotation(self.sourceAnnotation)
+      
+      let region = RLocationHelper.shared.regionOf(location: self.sourceLoc!)
+      self.mapView.setRegion(region, animated: true)
+      self.locationManager.stopUpdatingLocation()
     }
   }
 }
