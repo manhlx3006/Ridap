@@ -76,9 +76,25 @@ class ViewController: UIViewController {
                                          destImg: UIImage(named: "destination"))
   }
   @IBAction func routeScorePressed(_ sender: UIButton) {
+    let userDefaults = UserDefaults.standard
+    var points = userDefaults.object(forKey: "Route_points") as? Int ?? 0
+    var total = userDefaults.object(forKey: "Route_total") as? Int ?? 0
+    points += sender.tag
+    total += 1
+    userDefaults.set(points, forKey: "Route_points")
+    userDefaults.set(total, forKey: "Route_total")
+    userDefaults.synchronize()
   }
 
   @IBAction func etaScorePressed(_ sender: UIButton) {
+    let userDefaults = UserDefaults.standard
+    var points = userDefaults.object(forKey: "ETA_points") as? Int ?? 0
+    var total = userDefaults.object(forKey: "ETA_total") as? Int ?? 0
+    points += sender.tag
+    total += 1
+    userDefaults.set(points, forKey: "ETA_points")
+    userDefaults.set(total, forKey: "ETA_total")
+    userDefaults.synchronize()
   }
 }
 

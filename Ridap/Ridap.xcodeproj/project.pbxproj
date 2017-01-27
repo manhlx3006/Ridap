@@ -225,7 +225,7 @@
 				TargetAttributes = {
 					C19B514B1E3A069200F55981 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 758JGC9K2N;
+						DevelopmentTeam = ZEC49S6T5X;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -456,11 +456,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 758JGC9K2N;
+				DEVELOPMENT_TEAM = ZEC49S6T5X;
 				INFOPLIST_FILE = Ridap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lexman.ridap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mike.le.ridap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -470,11 +470,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 758JGC9K2N;
+				DEVELOPMENT_TEAM = ZEC49S6T5X;
 				INFOPLIST_FILE = Ridap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lexman.ridap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mike.le.ridap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

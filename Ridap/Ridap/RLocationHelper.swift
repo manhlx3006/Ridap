@@ -68,8 +68,8 @@ class RLocationHelper: NSObject {
                                           subTitle: "",
                                           id: "source",
                                           image: UIImage(named: "source"))
-        let destAnnotation = annotation(coordinate: (sourcePlacemark.location?.coordinate)!,
-                                        title: parseAddress(selectedItem: sourcePlacemark),
+        let destAnnotation = annotation(coordinate: (destPlacemark.location?.coordinate)!,
+                                        title: parseAddress(selectedItem: destPlacemark),
                                         subTitle: "",
                                         id: "destination",
                                         image: UIImage(named: "destination"))
